@@ -14,7 +14,7 @@
         "url": "https://github.com/qzsiniong/vscode-php-runner.git"
     },
     "preview": true,
-	"publisher": "qinzisong",
+	"publisher": "qzsiniong",
     "activationEvents": [
         "onLanguage:php"
     ],
