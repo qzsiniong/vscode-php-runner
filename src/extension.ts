@@ -25,7 +25,11 @@ export function activate(context: vscode.ExtensionContext) {
 		terminal = vscode.window.createTerminal(terminalName);
 
 		terminal.sendText(`php artisan tinker`);
-		terminal.sendText(`(new ${namespace}\\${className}())->${methodName}()`);
+		terminal.sendText(`$instance = new ${namespace}\\${className}();`);
+		if (Settings.settings.beforeInvoke) {
+			terminal.sendText(Settings.settings.beforeInvoke);
+		}
+		terminal.sendText(`$instance->${methodName}();`);
 		terminal.show();
 	});
 

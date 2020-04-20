@@ -2,7 +2,7 @@
     "name": "php-runner",
     "displayName": "php-runner",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.44.0"
     },
@@ -23,7 +23,7 @@
         "commands": [
             {
                 "command": "php-runner.run",
-                "title": "Hello World"
+                "title": "new and invoke"
             }
         ],
         "configuration": {
@@ -39,6 +39,10 @@
 					"uniqueItems": true,
                     "default": "exec",
                     "description": "Run 要执行的方法名"
+                },
+                "php-runner.beforeInvoke": {
+                    "type":"string",
+                    "markdownDescription": "Do somethings before invoke the method. example: \n```\n$instance->consoleOutput = new Symfony\\Component\\Console\\Output\\ConsoleOutput();```"
                 }
             }
         }

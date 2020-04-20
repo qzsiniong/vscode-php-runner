@@ -12,7 +12,7 @@
 			"runtimeExecutable": "${execPath}",
 			"args": [
 				"--extensionDevelopmentPath=${workspaceFolder}",
-                "/Users/qzs/workspace/php/erp_dic"
+                "~/workspace/php/erp_dic/"
 			],
 			"outFiles": [
 				"${workspaceFolder}/out/**/*.js"

@@ -13,7 +13,8 @@
 
 This extension contributes the following settings:
 
-* `php-runner.methods`: set the method which will show `Run ...` ,default `"exec"`, and you can set more than one by a array like `["exec", "run"]`
+* `php-runner.methodNames`: set the method which will show `Run ...` ,default `"exec"`, and you can set more than one by a array like `["exec", "run"]`
+* `php-runner.beforeInvoke`: Do somethings before invoke the method. example: ```$instance->consoleOutput = new Symfony\\Component\\Console\\Output\\ConsoleOutput();```
 
 ## Known Issues
 
@@ -24,3 +25,7 @@ None
 ### 0.0.1
 
 First release.
+
+### 0.0.2
+
+add Setting: php-runner.beforeInvoke

@@ -2,6 +2,7 @@ import { workspace } from "vscode";
 
 interface ISettings {
     methodNames: string | string[];
+    beforeInvoke?: string;
 }
 
 const defaultSettings:ISettings = {
